@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Wiki Please",
+  "version": "1.0",
+  "description": "Remove Wikipedia clarification box on YouTube videos. This extension is intended for people capable of forming their own opinions.",
+  "icons": {
+    "16": "icon_16.png",
+    "32": "icon_32.png",
+    "48": "icon_48.png",
+    "128": "icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "css": ["styles.css"]
+    }
+  ],
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_icon": "icon_16.png"
+  }
+}
